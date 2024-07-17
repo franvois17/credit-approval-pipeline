@@ -37,8 +37,13 @@ Installation
 The pipeline generates the following output files:
 
 data.csv: The synthetic customer data generated for training and evaluation.
+
 combined_data.csv: The combined data extracted from MySQL, MongoDB, and S3.
+
 trained_model.pkl: The trained Random Forest model.
+
 new_data_predictions.csv: Predictions for new synthetic data samples.
+
 data_visualization.png: Visualization of the synthetic data.
+
 confusion_matrix.png: Confusion matrix of the model's performance.
