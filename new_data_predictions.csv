@@ -1,0 +1,6 @@
+customer_id,name,age,income,credit_score,employment_status,existing_debt,has_defaulted,is_approved
+251f3bc7-9821-42f8-a0fa-b73ed4d87d55,Robin Bentley,54,51107,531,Self-employed,6692,0,1
+af5a6ef8-c9bb-49a7-9ee6-c659f4ad814e,Joseph Smith,43,101554,801,Employed,40795,1,0
+a64106ca-358f-43cc-bea8-64f1e13a23c0,David Adkins,21,86839,842,Employed,42327,1,0
+736bbed0-bdcc-465f-aa83-53fc86bea61b,Eduardo Brown,19,91869,466,Unemployed,35023,1,1
+9ce4fb43-6ec4-4130-9e2b-75ea90176967,Justin Landry,40,70424,781,Unemployed,21623,0,0
