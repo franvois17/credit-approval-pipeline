@@ -34,6 +34,7 @@ MySQL and MongoDB instances for data storage
 Installation
 
 **Output Files**
+
 The pipeline generates the following output files:
 
 data.csv: The synthetic customer data generated for training and evaluation.
