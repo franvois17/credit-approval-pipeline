@@ -1,6 +1,7 @@
 # Credit-approval-pipeline
 This repository contains a comprehensive data pipeline for predicting credit card approvals. The project utilizes Prefect for workflow orchestration, generating and processing synthetic data, training machine learning models, and storing the results in various data sources including MySQL, MongoDB, and AWS S3.
-![image](https://github.com/user-attachments/assets/80940deb-b533-453f-8a60-9a087bca5384)
+
+![diagrama flujo final](https://github.com/user-attachments/assets/89059b88-3f8d-4a53-98a5-a0ca9a4f5a2d)
 
 **Project Overview**
 
