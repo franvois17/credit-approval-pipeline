@@ -126,6 +126,13 @@ def train_model(df, model_path='trained_model.pkl'):
     return model, X_test, y_test, y_pred
 
 @task
+def upload_model_to_s3(bucket_name, file_name, model_path='trained_model.pkl'):
+    s3_client = boto3.client('s3')
+    with open(model_path, "rb") as f:
+        s3_client.upload_fileobj(f, bucket_name, file_name)
+    print(f"Model successfully uploaded to {bucket_name}/{file_name}")
+
+@task
 def visualize_data(df, bucket_name, file_name):
     plt.figure()
     sns.pairplot(df[['age', 'income', 'credit_score', 'existing_debt', 'has_defaulted', 'is_approved']])
@@ -215,6 +222,9 @@ def credit_card_offer_pipeline():
     visualize_data(numeric_data, 'fbaquero', 'data_visualization.png')
     
     model, X_test, y_test, y_pred = train_model(numeric_data)
+    
+    # Nueva tarea para subir el modelo a S3
+    upload_model_to_s3('fbaquero', 'trained_model.pkl')
     
     plot_confusion_matrix(y_test, y_pred, 'fbaquero', 'confusion_matrix.png')
     
